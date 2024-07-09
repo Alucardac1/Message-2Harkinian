@@ -26,7 +26,7 @@ Replace <directory\m2h-betaV0.1.jar> with the actual path to your m2h-betaV0.1.j
 
 When you run the program, the following interface will be displayed:
 
-[![message-2harnikian.png](https://i.postimg.cc/wvY85hFq/message-2harnikian.png)]
+![message-2harnikian.png](https://i.postimg.cc/wvY85hFq/message-2harnikian.png)
 
 Click on "Select file," choose your message_data.h file, and click "Start." Wait for the process to complete. This will generate a file named message_data_static, which is the compiled dialogue file for 2s2h. You'll need to add this file to a .otr/.o2r or mm.o2r structure following this hierarchy:
 

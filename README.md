@@ -28,7 +28,9 @@ When you run the program, the following interface will be displayed:
 
 ![message-2harnikian.png](https://i.postimg.cc/wvY85hFq/message-2harnikian.png)
 
-Click on "Select file," choose your message_data.h file, and click "Start." Wait for the process to complete. This will generate a file named message_data_static, which is the compiled dialogue file for 2s2h. You'll need to add this file to a .otr/.o2r or mm.o2r structure following this hierarchy:
+Click on "Select file," choose your message_data.h file, and click "Start." Wait for the process to complete. This will generate a file named message_data_static, which is the compiled dialogue file for 2s2h. Note that the file will be generated in the location where the program was called. For example, if you called it from the JDK's bin directory, it will be in that directory.
+
+After that you'll need to add the message_data_static file to a .otr/.o2r or mm.o2r, following this hierarchy:
 
 ```
 |───text

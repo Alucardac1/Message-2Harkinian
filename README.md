@@ -49,12 +49,16 @@ Commands on the Message 2 Harkinian are words or symbols that indicate to interp
 Theese commands exists only inside of strings, they are:
 
 ```
-\xNN - hexadecimal command: This command is used to written literal hexvalues in the message_data_static. NN is a hex value start from 00 to FF.
+\xNN - hexadecimal command: This command is used to written literal hexvalues in the
+message_data_static. NN is a hex value start from 00 to FF.
 \n - this command indicates a linebreak, is equivalent to \x11 or the cmd_ command CMD_NEWLINE.
 
 Exclusive commands: (they are implemmented on the Message 2Harkinian and are not official supported by decomp)
-\" - indicates that the double quote symbol must be written as a double quote symbol in the dialog. It's necessary on the Message 2Harkinian. Use \x22 to mantein the compatibiliy with the decomp.
-\\ - indicates that the backslash bar must be written as a backslash bar in the dialog, in the momment it's configured to write the normal slash bar symbol because the backslash symbol doesn't exist in the stock game, so prefer to use "/" instead of this.
+\" - indicates that the double quote symbol must be written as a double quote symbol in the dialog.
+It's necessary on the Message 2Harkinian. Use \x22 to mantein the compatibiliy with the decomp.
+\\ - indicates that the backslash bar must be written as a backslash bar in the dialog,
+in the momment it's configured to write the normal slash bar symbol because the backslash symbol doesn't exist in the stock game,
+so prefer to use "/" instead of this.
 ```
 
 ### CMD_ Commands

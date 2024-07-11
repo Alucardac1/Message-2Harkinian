@@ -41,7 +41,7 @@ After that you'll need to add the message_data_static file to a .otr/.o2r or mm.
 
 You can use 7zip to open .o2r files and an MPQ editor to open .otr files.
 
-# Commands
+# Commands Syntax
 
 Commands on the Message 2 Harkinian are words or symbols that indicate to interpreter wich byte must be written in the message_data_static to activate a specific function in the dialog. Basicly, they are divided in two subgroups, i call them of cmd_ commands or just commands, and backslash commands.
 

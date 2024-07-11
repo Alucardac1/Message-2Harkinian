@@ -49,12 +49,15 @@ Commands on the Message 2Harkinian are words or symbols that indicate to interpr
 Theese commands exists only inside of strings, they are:
 
 `\xNN` - hexadecimal command: This command is used to written literal hexvalues in the message_data_static. NN is a hex value start from 00 to FF.
+
 `\n` - this command indicates a linebreak, is equivalent to \x11 or the cmd_ command CMD_NEWLINE.
 
-Exclusive commands: (they are implemmented on the Message 2Harkinian and are not official supported by decomp)
-`\"` - indicates that the double quote symbol must be written as a double quote symbol in the dialog. It's necessary on the Message 2Harkinian. Use \x22 to mantein the compatibiliy with the decomp.
-`\\` - indicates that the backslash bar must be written as a backslash bar in the dialog, in the momment it's configured to write the normal slash bar symbol because the backslash symbol doesn't exist in the stock game, so prefer to use "/" instead of this.
+Exclusive commands:
+They are implemmented on the Message 2Harkinian and are not official supported by decomp.
 
+`\"` - indicates that the double quote symbol must be written as a double quote symbol in the dialog. It's necessary on the Message 2Harkinian. Use \x22 to mantein the compatibiliy with the decomp.
+
+`\\` - indicates that the backslash bar must be written as a backslash bar in the dialog, in the momment it's configured to write the normal slash bar symbol because the backslash symbol doesn't exist in the stock game, so prefer to use "/" instead of this.
 
 ### CMD_ Commands
 The message_data.h uses a bunch of cmd_ commands, all of them are inhret from the decomp project and they exists only outside of strings, theese commands are listed in the initializeCommandsHashMap fuction on the Constants.java file, to avoid bugs, please use the prefix `CMD_` in your custom commands, the interprerter recognizes only upcase letters, numbers and underline symbol for commands name, like in this example: `CMD_EXAMPLE_COMMAND2`.
